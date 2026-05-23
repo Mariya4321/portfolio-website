@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mariya Chikhly — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="navbar">
+  <div class="nav-logo"><span>&lt;</span>Mariya<span>/&gt;</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">main()</a></li>
+    <li><a href="#about">knowMe()</a></li>
+    <li><a href="#skills">getSkill()</a></li>
+    <li><a href="#projects">viewProjects()</a></li>
+    <li><a href="#experience">getExperience()</a></li>
+    <li><a href="#contact" class="nav-cta">reachOut()</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home" class="mobile-link">main()</a>
+  <a href="#about" class="mobile-link">knowMe()</a>
+  <li><a href="#skills">getSkill()</a></li>
+  <a href="#projects" class="mobile-link">viewProjects()</a>
+  <a href="#experience" class="mobile-link">getExperience()</a>
+  <a href="#contact" class="mobile-link">reachOut()</a>
+</div>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section id="home" class="section" style="padding-top: calc(var(--nav-h) + 80px);">
+  <div class="hero-inner">
+    <!-- LEFT -->
+    <div class="hero-left">
+      <!-- REPLACE: Your greeting -->
+      <p class="hero-greeting">Hello, World!</p>
+
+      <!-- REPLACE: Your name -->
+      <h1 class="hero-name">Mariya<br/><span>Chikhly</span></h1>
+
+      <!-- Typing animation — roles auto-cycle -->
+      <p class="hero-roles">
+        &gt; <span id="typed-text"></span><span class="typed-cursor">|</span>
+      </p>
+
+      <!-- REPLACE: Your bio (2–3 sentences) -->
+      <p class="hero-bio">
+        Passionate about building <strong>scalable and responsive </strong>backend systems and modern web applications that solve real problems.
+        Specializing in full stack development with <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>Angular</strong> —
+        I focus on writing clean, maintainable code and creating seamless digital experiences.
+      </p>
+
+      <div class="hero-btns">
+        <!-- REPLACE: href with actual CV link or file path -->
+        <a href="/images/MariyaChikhly_JavaDeveloper_Resume.pdf" class="btn btn-primary" target="_blank">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fa-solid fa-paper-plane"></i> Let's Talk
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Profile Image / Graphic -->
+    <div class="hero-graphic">
+      <div class="hero-img-frame">
+        <div class="hero-img-bg">
+          <img src="/images/ProfilePic.png" alt="Mariya Chikhly" class="hero-profile-pic">
+        </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS STRIP
+     ============================================================ -->
+<!-- <div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="25">0</div>
+      <div class="stat-label">Projects Shipped</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-num" data-target="3">0</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-num" data-target="12">0</div>
+      <div class="stat-label">Technologies</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-num" data-target="8">0</div>
+      <div class="stat-label">Happy Clients</div>
+    </div>
+  </div>
+</div> -->
+
+<!-- ============================================================
+     ABOUT SECTION
+     ============================================================ -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <p class="section-label reveal">01 — About</p>
+    <h2 class="section-title reveal">Who I Am</h2>
+    <div class="about-grid">
+      <!-- LEFT SIDE -->
+      <div>
+        <p class="about-text reveal">
+          I'm a <strong>Java Full Stack Developer</strong> passionate about building scalable
+          backend systems and modern web applications using Java, Spring Boot, and Angular.
+        </p>
+        <p class="about-text reveal reveal-delay-1">
+          I enjoy solving real-world problems through clean architecture,
+          REST APIs, and responsive frontend experiences.
+        </p>
+        <p class="about-text reveal reveal-delay-2">
+          Currently exploring Docker, Linux, and GenAI integrations
+          while continuously improving my full stack development skills.
+        </p>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div>
+        <div class="about-code-block reveal reveal-delay-3">
+          <div class="code-line">
+            <span class="ln">1</span>
+            <span class="kw">const</span>&nbsp;
+            <span class="fn">Mariya</span>&nbsp;= {
+          </div>
+          <div class="code-line">
+            <span class="ln">2</span>
+            &nbsp;&nbsp;location:&nbsp;
+            <span class="str">"Pune, Maharashtra"</span>,
+          </div>
+          <div class="code-line">
+            <span class="ln">3</span>
+            &nbsp;&nbsp;education:&nbsp;
+            <span class="str">"BBA in Computer Applications"</span>,
+          </div>
+          <div class="code-line">
+            <span class="ln">4</span>
+            &nbsp;&nbsp;role:&nbsp;
+            <span class="str">"Java Full Stack Developer"</span>,
+          </div>
+          <div class="code-line">
+            <span class="ln">5</span>
+            &nbsp;&nbsp;skills:&nbsp;[
+            <span class="str">"Java"</span>,
+            <span class="str">"Spring Boot"</span>,
+            <span class="str">"Angular"</span>
+            ],
+          </div>
+          <div class="code-line">
+            <span class="ln">6</span>
+            &nbsp;&nbsp;currently:&nbsp;
+            <span class="str">"Open to opportunities"</span>,
+          </div>
+          <div class="code-line">
+            <span class="ln">7</span>
+            }
+          </div>
+        </div>
+        <div style="margin-top:2rem;" class="reveal">
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-envelope"></i>
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS SECTION
+     ============================================================ -->
+<section id="skills" class="skills-section">
+  <div class="section-inner">
+    <p class="section-label reveal">02 — Skills</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="matrix-container">
+
+      <!-- Header -->
+      <div class="matrix-header empty-box">
+        My Knowledge Matrix
+      </div>
+      <div class="matrix-header">Core Skills</div>
+      <div class="matrix-header">Currently Learning</div>
+
+      <!-- Row 1 -->
+      <div class="matrix-side">Strong</div>
+
+      <!-- Core Skills -->
+      <div class="matrix-card">
+        <h3>🚀 Strong Skills</h3>
+        <p>Technologies I use confidently in projects</p>
+        <div class="skill-hover-text">
+            Hover/Click over a skill icon
+        </div>
+        <div class="skill-icons">
+          <i class="fa-brands fa-java" data-skill="Java"></i>
+          <i class="fa-solid fa-leaf" data-skill="Spring Boot"></i>
+          <i class="fa-brands fa-angular" data-skill="Angular"></i>
+          <i class="fa-brands fa-git-alt" data-skill="Git"></i>
+          <i class="fa-brands fa-html5" data-skill="HTML"></i>
+          <i class="fa-brands fa-css3-alt" data-skill="CSS"></i>
+          <i class="fa-brands fa-js" data-skill="JavaScript"></i>
+          <i class="fa-solid fa-database" data-skill="SQL"></i>
+          <i class="fa-brands fa-python" data-skill="Python"></i>
+        </div>
+      </div>
+
+      <!-- Learning -->
+      <div class="matrix-card">
+        <h3>📚 Currently Learning</h3>
+        <p>Improving through hands-on practice</p>
+        <div class="skill-hover-text">
+            Hover/Click over a skill icon
+        </div>
+        <div class="skill-icons">
+          <i class="fa-brands fa-docker" data-skill="Docker"></i>
+          <i class="fa-brands fa-linux" data-skill="Linux"></i>
+          <i class="fa-solid fa-server" data-skill="REST APIs"></i>
+          <i class="fa-solid fa-shield-halved" data-skill="JWT Authentication"></i>
+          <i class="fa-solid fa-database" data-skill="PostgreSQL"></i>
+          <i class="fa-brands fa-react" data-skill="React JS"></i>
+          <i class="fa-solid fa-diagram-project" data-skill="Data Structures & Algorithms"></i>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="matrix-side">Exploring</div>
+
+      <!-- Exploring -->
+      <div class="matrix-card">
+        <h3>🧠 Exploring</h3>
+        <p>Technologies I’m curious and excited about</p>
+        <div class="skill-hover-text">
+            Hover/Click over a skill icon
+        </div>
+        <div class="skill-icons">
+          <i class="fa-solid fa-brain" data-skill="GenAI"></i>
+          <i class="fa-solid fa-robot" data-skill="AI"></i>
+          <i class="fa-solid fa-code" data-skill="System Design"></i>
+        </div>
+      </div>
+
+      <!-- Future Goals -->
+      <div class="matrix-card">
+        <h3>🔮 Future Goals</h3>
+        <p>Next technologies on my roadmap</p>
+        <div class="skill-hover-text">
+            Hover/Click over a skill icon
+        </div>
+        <div class="skill-icons">
+          <i class="fa-brands fa-aws" data-skill="AWS"></i>
+          <i class="fa-solid fa-network-wired" data-skill="Microservices"></i>
+          <i class="fa-solid fa-cloud" data-skill="Cloud"></i>
+          <i class="fa-brands fa-docker" data-skill="Kubernetes"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS SECTION
+     ============================================================ -->
+<section id="projects" class="section">
+  <div class="section-inner">
+    <p class="section-label reveal">03 — Projects</p>
+    <h2 class="section-title reveal">Things I've Built</h2>
+    <p style="color:var(--text2);font-size:.93rem;margin-bottom:2.5rem;" class="reveal">
+      A selection of my recent work. Each project is a unique problem solved.
+    </p>
+
+    <div class="projects-filter reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- ======= PROJECT 1 ======= -->
+      <div class="project-card reveal" data-category="fullstack">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #0f1f35, #0a3d2e);">
+            🛒
+          </div>
+          <span class="project-featured-badge">Featured</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MongoDB</span>
+            <span class="project-tag">Stripe</span>
+          </div>
+          <h3 class="project-title">ShopWave — E-Commerce Platform</h3>
+          <p class="project-desc">
+            A full-featured e-commerce platform with real-time inventory management, Stripe payment integration, admin dashboard, and automated email notifications. Handles 1000+ concurrent users.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="project-link featured" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= PROJECT 2 ======= -->
+
+      <!-- ======= PROJECT 3 ======= -->
+      <div class="project-card reveal reveal-delay-2" data-category="backend">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #0f2535, #0a2d3d);">
+            🤖
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">OpenAI</span>
+            <span class="project-tag">Redis</span>
+          </div>
+          <h3 class="project-title">AskDoc — AI Document Q&A API</h3>
+          <p class="project-desc">
+            REST API that lets users upload PDFs and query them in natural language using GPT-4 embeddings. Includes semantic search, caching, and a rate-limiting middleware.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="project-link featured" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= PROJECT 4 ======= -->
+      <div class="project-card reveal" data-category="frontend">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #1a200f, #2a3d1a);">
+            📊
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">D3.js</span>
+            <span class="project-tag">Tailwind</span>
+            <span class="project-tag">REST API</span>
+          </div>
+          <h3 class="project-title">DataPulse — Analytics Dashboard</h3>
+          <p class="project-desc">
+            Interactive data visualization dashboard with real-time charts, filterable tables, CSV export, and a customizable widget layout. Connects to any REST data source.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="project-link featured" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE SECTION
+     ============================================================ -->
+<section id="experience" class="section">
+  <div class="section-inner">
+    <p class="section-label reveal">04 — Experience</p>
+    <h2 class="section-title reveal">Where I've Worked</h2>
+
+    <div class="timeline" style="margin-top:3rem; max-width: 700px;">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jan 2026 — July 2026</div>
+        <div class="timeline-role">Java Full Stack Developer Intern</div>
+        <div class="timeline-company">Brandspark Technologies · Pune, Maharashtra · Internship</div>
+        <ul class="timeline-desc">
+          <li>Developed and tested RESTful APIs using Java, Spring Boot, and PostgreSQL with Hibernate for scalable backend services.</li>
+          <li>Built responsive full-stack applications using Angular and TypeScript while integrating frontend and backend components seamlessly.</li>
+          <li>Containerized applications with Docker and worked in Linux-based environments to support efficient development and deployment workflows.</li>
+          <li>Collaborated using Git for version control, code reviews, debugging, refactoring, and optimizing application performance and maintainability.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT SECTION
+     ============================================================ -->
+<section id="contact" class="section">
+  <div class="section-inner">
+    <p class="section-label reveal">05 — Contact</p>
+    <h2 class="section-title reveal">Let's Work Together</h2>
+
+    <div class="contact-grid" style="margin-top:3rem;">
+      <!-- LEFT: Info -->
+      <div class="reveal">
+        <p class="contact-tagline">
+          Got a project? <span>Let's build</span><br/>something great.
+        </p>
+        <p class="contact-info-text">
+          Whether you have a job opportunity, a freelance project, or just want to say hello —
+          my inbox is always open. I typically respond within 24 hours.
+        </p>
+
+        <!-- Social icons -->
+        <div class="contact-socials">
+          <a href="https://github.com/Mariya4321" target="_blank" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/mariya-chikhly" target="_blank" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:mariyachikhly84@gmail.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://leetcode.com/u/Mariya_Chikhly/" target="_blank" class="social-link" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+        </div>
+
+        <!-- Direct contact info -->
+        <div class="contact-direct">
+          <div class="contact-item"><i class="fa-solid fa-envelope"></i> mariyachikhly84@gmail.com</div>
+          <div class="contact-item"><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra (Open to Remote)</div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact form -->
+      <div class="reveal reveal-delay-2">
+        <form 
+        class="contact-form" 
+        id="contactForm"
+        action="https://formspree.io/f/xeedzqbq"
+        method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input 
+              type="text"
+              name="name"
+              class="form-input"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input 
+              type="email"
+              name="email"
+              class="form-input"
+              placeholder="your.email@example.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input 
+            type="text"
+            name="subject"
+            class="form-input"
+            placeholder="Project collaboration..."
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea 
+            name="message"
+            class="form-textarea"
+            rows="5"
+            placeholder="Tell me about your project or work..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          <i class="fa-solid fa-paper-plane"></i>
+          Send Message
+        </button>
+      </form>
+      <p 
+        id="form-msg"
+        style="
+          font-family:var(--font-mono);
+          font-size:0.8rem;
+          color:var(--accent);
+          margin-top:0.75rem;
+          display:none;
+        ">
+        ✓ Message sent! I'll get back to you soon.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <p class="footer-copy">© 2026 <span>Mariya Chikhly</span> — Designed &amp; Built with ♥</p>
+  <div class="footer-links">
+    <a href="#home">Back to top ↑</a>
+    <a href="https://github.com/Mariya4321" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/mariya-chikhly" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
