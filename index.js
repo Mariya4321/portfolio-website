@@ -31,20 +31,28 @@ window.addEventListener('scroll', () => {
 
 
 /* ── HAMBURGER / MOBILE NAV ──────────────────────────────────── */
-// const hamburger = document.getElementById('hamburger');
-// const mobileNav = document.getElementById('mobileNav');
-// hamburger.addEventListener('click', () => {
-//   hamburger.classList.toggle('open');
-//   mobileNav.classList.toggle('open');
-//   document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
-// });
-// document.querySelectorAll('.mobile-link').forEach(a => {
-//   a.addEventListener('click', () => {
-//     hamburger.classList.remove('open');
-//     mobileNav.classList.remove('open');
-//     document.body.style.overflow = '';
-//   });
-// });
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+if (hamburger && mobileNav) {
+  const toggleMobileNav = () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+  };
+
+  hamburger.addEventListener('click', toggleMobileNav);
+  hamburger.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') toggleMobileNav();
+  });
+
+  document.querySelectorAll('.mobile-link').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+}
 
 
 /* ── SCROLL REVEAL ───────────────────────────────────────────── */
@@ -94,7 +102,7 @@ skillIcons.forEach(icon => {
     const text = parentCard.querySelector('.skill-hover-text');
     text.classList.remove('active');
     setTimeout(() => {
-      text.textContent = 'Hover over a skill icon';
+      text.textContent = 'Hover/Click over a skill icon';
       text.classList.add('active');
     }, 120);
   });
