@@ -220,7 +220,7 @@ nav.scrolled {
    ============================================================ */
 #home {
   min-height: 100vh;
-  padding: calc(var(--nav-h) + 60px) 6% 80px;
+  padding: calc(var(--nav-h) + 20px) 6% 80px;
   display: flex; align-items: center;
 }
 .hero-inner {
@@ -1093,7 +1093,7 @@ footer {
   }
 
   .about-code-block {
-    padding: 1.25rem;
+    display: none;
   }
 
   .project-body {
